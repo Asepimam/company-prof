@@ -7,6 +7,7 @@ import {
 } from 'next-intl'
 import { Inter, Rubik, Space_Grotesk } from 'next/font/google'
 import NextTopLoader from 'nextjs-toploader'
+import { Footer } from './components/Footer'
 import { Header } from './components/Header'
 import './globals.css'
 
@@ -75,6 +76,7 @@ export default function RootLayout({
             />
             <Header locale={locale} />
             <main className='mx-auto max-w-screen-2xl'>{children}</main>
+            <Footer />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>
